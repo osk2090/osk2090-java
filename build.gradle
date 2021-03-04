@@ -1,0 +1,30 @@
+//gradle 빌드도구에 플러그인 장착
+plugins {
+
+    id 'java'//자바 소스를 컴파일할때 사용할 도구
+    //뿐만아니라 eclipse 플로그인과 결합해서
+    //eclipse IDE의 자바 관련 설정 파일을 생성할 때도 사용한다
+    //예).classpath, .settings
+
+    id 'eclipse'//이클립스 관련 파일을 다룰때 사용할 도구
+    //예).project
+}
+
+//자바 소스를 컴파일 할때 적용할 옵션
+tasks.withType(JavaCompile) {
+    //javac -encoding UTF-8...
+    options.encoding = 'UTF-8'
+}
+
+//프로젝트에서 사용할 외부 자바 라이브러리를 다운로드 받을때 접속할 서버
+repositories {
+    jcenter()//http://jcenter.bintray.com/
+}
+
+//프로젝트에서 사용할 자바 라이브러리 목록
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+
+//현재 특별하게 사용할 라이브러리가 없기 때문에 일단 비워둔다
+
+}
