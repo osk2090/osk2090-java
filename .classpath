@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/main" kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.microsoft.sqlserver/mssql-jdbc/9.2.1.jre11/c5e3cd958a841c763900bfb457fed7d29740cab4/mssql-jdbc-9.2.1.jre11-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.microsoft.sqlserver/mssql-jdbc/9.2.1.jre11/7af72fb8f832634f7717f971a85ba199729b7eaa/mssql-jdbc-9.2.1.jre11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/2.7.2/c7cc82b15851b78616e4f97c49abd1459b3f3810/mariadb-java-client-2.7.2-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/2.7.2/138fb9b8caee700bf4793bc42947113a1dbc8532/mariadb-java-client-2.7.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/20.1.0/ffdf5f82454276113cc294e557017ad5fe2d4015/annotations-20.1.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/20.1.0/2fcd1f3225bca0c4a7bc931142076f8c1e80993f/annotations-20.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.5.6/534e25e22466062e9e07424a07f9ae86912d7c49/mybatis-3.5.6-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.5.6/28ea8fe7d6c3998cf1d0cb8af64b9d58f04c7cb3/mybatis-3.5.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc10/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/ojdbc10-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc10/19.10.0.0/4174e8d8acc29676b9d0784a61138408da7f626b/ojdbc10-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ucp/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/ucp-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ucp/19.10.0.0/b61480d68481872ce870537d1ce2ac2e33dc38da/ucp-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/oraclepki-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/oraclepki/19.10.0.0/af1089da8269faebaff81f2586520ef916abaf0b/oraclepki-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_core/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/osdt_core-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_core/19.10.0.0/4b370e713f1135e1c322cca4670542275956f466/osdt_core-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_cert/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/osdt_cert-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.security/osdt_cert/19.10.0.0/525af7f07e74b169d866c2cae8160a03d8614337/osdt_cert-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/simplefan/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/simplefan-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/simplefan/19.10.0.0/843b32e3d3bc9d3cfafbb2d701f67985f6227f7d/simplefan-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/ons/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/ons-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.ha/ons/19.10.0.0/6e79450393c284ebc06dd164d73a37eb91c1165f/ons-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/orai18n-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/19.10.0.0/53d67daca370271d1ec333b4c82cf0add9a0831b/orai18n-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.xml/xdb/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/xdb-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.xml/xdb/19.10.0.0/ea875a84d8f78ab8aafb51ed50aa8f9b0d7b2b21/xdb-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.xml/xmlparserv2/19.10.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/xmlparserv2-19.10.0.0-sources.jar" kind="lib" path="/Users/osk2090/.gradle/caches/modules-2/files-2.1/com.oracle.database.xml/xmlparserv2/19.10.0.0/fb65e103debdb23adef2a483c00d34bc60ef242b/xmlparserv2-19.10.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+</classpath>

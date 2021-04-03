@@ -6,7 +6,7 @@ public class Exam0110 {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<>();
         list.add("a");//순서대로 데이터삽입
-        list.add("b");
+        list.add("com/osk2090/mybatis/ex01/b");
         list.add("c");
         System.out.println("1." + list);
 

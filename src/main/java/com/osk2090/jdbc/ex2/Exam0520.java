@@ -55,7 +55,7 @@ public class Exam0520 {
                 fileStmt.setString(1, filename);
                 fileStmt.setInt(2, boardId);
 
-                fileStmt.executeUpdate();
+                fileStmt.executeUpdate();//DBMS에 해당 명령을 보냄
                 fileCount++;
             }
             System.out.printf("%d 개 첨부파일 입력 성공!\n", fileCount);

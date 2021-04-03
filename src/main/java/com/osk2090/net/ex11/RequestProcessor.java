@@ -55,7 +55,7 @@ public class RequestProcessor extends Thread {
                 String[] kv = parameter.split("=");
                 if (kv[0].equals("a")) {
                     a = Integer.parseInt(kv[1]);
-                } else if (kv[0].equals("b")) {
+                } else if (kv[0].equals("com/osk2090/mybatis/ex01/b")) {
                     b = Integer.parseInt(kv[1]);
                 }
             }

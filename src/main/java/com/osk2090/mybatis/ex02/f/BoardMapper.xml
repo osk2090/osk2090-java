@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardMapper">
+
+    <resultMap type="Board" id="BoardMap">
+        <id column="board_id" property="no"/>
+        <result column="contents" property="content"/>
+        <result column="created_date" property="registeredDate"/>
+        <result column="view_count" property="viewCount"/>
+    </resultMap>
+
+    <!--select 문의 실행 결과가 2개 이상일 때는 selectOne() 으로 실행할 수 없다-->
+    <select id="selectBoard1" resultMap="BoardMap">
+        select board_id,
+               title,
+               contents,
+               created_date,
+               view_count
+        from x_board;
+    </select>
+
+    <!--select 문의 실행 결과가 1개 인 경우
+    여기서 resultMap과 resultType의 차이를 설명하자면
+    Map은 새로 선언한 클래스를 장착할 때 쓰이고
+    Type은 이미 있는 객체나 프리머티브타입을 장착할 때쓰인다-->
+    <select id="selectBoard2" resultMap="BoardMap" parameterType="int">
+        select board_id,
+               title,
+               contents,
+               created_date,
+               view_count
+        from x_board
+        where board_id = #{no};
+    </select>
+
+    <select id="selectBoard3" resultType="map" parameterType="int">
+        select board_id,
+               title,
+               contents,
+               created_date,
+               view_count
+        from x_board
+        where board_id = #{no};
+<!--
+1.#{} 자동으로 값에 따옴표가 붙고 성능 좋음
+
+2.${} 값 그대로 전달 따옴표 안붙음 성능 좋지 않음 보안 취약
+
+3.ORDER BY 아니면 #{} 쓰기.
+-->
+    </select>
+
+
+
+
+
+</mapper>
+
+
+
+
+
+
+
