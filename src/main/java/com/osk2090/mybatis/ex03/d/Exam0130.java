@@ -7,28 +7,24 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-public class Exam0120 {
-
-    //openSession(auto commit 여부)
-    //true: 데이터 변경 후 즉시 커밋한다
-    //false: 데이터 변경 후 commit()을 호출할 때까지 실제 테이블에 변경 사항을 반영하지 않는다
-    //
-    //openSession()
-    //기본이 수동 커밋이다
-    // openSession(false) 와 같다
+public class Exam0130 {
 
     public static void main(String[] args) throws Exception {
         SqlSession sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream(
                 "com/osk2090/mybatis/ex03/d/mybatis-config.xml")).openSession();
 
         Board board = new Board();
-        board.setTitle("제목yyy");
-        board.setContent("내용yyy");
+        board.setTitle("제목zzz");
+        board.setContent("내용zzz");
 
         int count = sqlSession.insert("BoardMapper.insert", board);
         System.out.printf("%d 개의 데이터를 입력 했음!\n", count);
 
-        //commit()을 호출하지 않아도 즉시 테이블에 변경 사항을 반영한다
+        //수동 커밋 상태일 때는
+        // 데이터 변경 후 commit() 을 명시적으로 호출해야 한다
+        // 그래야 실제 테이블에 변경 사항이 반영된다
+
+        sqlSession.commit();
 
         sqlSession.close();
 
