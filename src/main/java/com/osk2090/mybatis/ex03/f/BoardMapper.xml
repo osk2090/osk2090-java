@@ -65,7 +65,17 @@
         from ${tableName};
     </select>
 
+    <delete id="delete1" parameterType="string">
+        delete
+        from x_board;
+        where title = #{condition};
+    </delete>
 
+    <delete id="delete2" parameterType="string">
+        delete
+        from x_board;
+        where ${condition};
+    </delete>
 </mapper>
 
 

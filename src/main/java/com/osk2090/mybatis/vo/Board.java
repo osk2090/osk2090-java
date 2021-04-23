@@ -2,6 +2,7 @@ package com.osk2090.mybatis.vo;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.List;
 
 public class Board implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -11,11 +12,26 @@ public class Board implements Serializable {
     String content;
     Date registeredDate;
     int viewCount;
+    List<AttachFile> attachFiles;
 
     @Override
     public String toString() {
-        return "Board [no=" + no + ", title=" + title + ", content=" + content + ", registeredDate="
-                + registeredDate + ", viewCount=" + viewCount + "]";
+        return "Board{" +
+                "no=" + no +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", registeredDate=" + registeredDate +
+                ", viewCount=" + viewCount +
+                ", attachFiles=" + attachFiles +
+                '}';
+    }
+
+    public List<AttachFile> getAttachFiles() {
+        return attachFiles;
+    }
+
+    public void setAttachFiles(List<AttachFile> attachFiles) {
+        this.attachFiles = attachFiles;
     }
 
     public int getNo() {
